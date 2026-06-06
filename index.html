@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>CareerPilot AI</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="hero">
+		<div class="container hero-inner">
+			<div class="hero-copy">
+				<p class="eyebrow">Career roadmap intelligence</p>
+				<h1>CareerPilot AI</h1>
+				<p class="hero-text">Launch your engineering career with a premium, personalized study plan tailored to your goals, experience level, and daily availability.</p>
+				<a class="cta-button" href="#roadmap-form">Start your roadmap</a>
+			</div>
+			<aside class="hero-visual" aria-labelledby="showcase-heading">
+				<div class="showcase-card" role="region" aria-label="Engineering Career Platform showcase">
+					<div class="showcase-header">
+						<!-- Compass logo with subtle circuit motif -->
+						<div class="logo" aria-hidden="false">
+							<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<defs>
+									<linearGradient id="lg1" x1="0" x2="1" y1="0" y2="1">
+										<stop offset="0" stop-color="#4ce3ff" />
+										<stop offset="1" stop-color="#7b5cff" />
+									</linearGradient>
+								</defs>
+								<!-- outer circle -->
+								<circle cx="32" cy="32" r="30" fill="url(#lg1)" opacity="0.95" />
+								<!-- subtle circuit lines -->
+								<g stroke="#ffffffcc" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.18">
+									<path d="M20 32h4" />
+									<path d="M40 32h4" />
+									<path d="M32 20v4" />
+									<path d="M32 40v4" />
+								</g>
+								<!-- compass needle -->
+								<g transform="translate(32,32)">
+									<path d="M0 -12 L6 8 L0 4 L-6 8 Z" fill="#fff" transform="rotate(-22)" />
+									<circle cx="0" cy="0" r="2" fill="#0b1220" />
+								</g>
+							</svg>
+						</div>
+						<div class="showcase-title">
+							<h3 id="showcase-heading">CareerPilot AI</h3>
+							<p class="muted">Navigate Your Engineering Journey</p>
+						</div>
+					</div>
+
+					<div class="showcase-body">
+						<p class="lead">Engineering Career Roadmaps Designed For Future Innovators</p>
+						<div class="supported-domains" role="list" aria-label="Supported engineering domains">
+							<ul>
+								<li>Software Engineer</li>
+								<li>AI Engineer</li>
+								<li>Machine Learning Engineer</li>
+								<li>Data Scientist</li>
+								<li>Data Analyst</li>
+								<li>Web Developer</li>
+								<li>Frontend Developer</li>
+								<li>Backend Developer</li>
+								<li>Full Stack Developer</li>
+								<li>Cyber Security Engineer</li>
+								<li>Ethical Hacker</li>
+								<li>Cloud Engineer</li>
+								<li>DevOps Engineer</li>
+								<li>Cloud Architect</li>
+								<li>Mechanical Engineer</li>
+								<li>Civil Engineer</li>
+								<li>Electrical Engineer</li>
+								<li>Electronics Engineer</li>
+								<li>Robotics Engineer</li>
+								<li>Mechatronics Engineer</li>
+								<li>Automobile Engineer</li>
+								<li>Biomedical Engineer</li>
+								<li>Aerospace Engineer</li>
+								<li>Chemical Engineer</li>
+								<li>Environmental Engineer</li>
+							</ul>
+						</div>
+
+						<div class="badge">More Engineering Domains Coming Soon 🚀</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</header>
+
+	<main>
+		<section class="form-panel" aria-labelledby="form-panel-heading">
+			<div class="container">
+				<header class="section-header">
+					<p class="eyebrow">Tailor your path</p>
+					<h2 id="form-panel-heading">Build a study plan in seconds</h2>
+					<p>Provide your target role, experience level and daily study commitment, then let CareerPilot AI generate a professional roadmap.</p>
+				</header>
+
+				<form id="roadmap-form" class="roadmap-form" onsubmit="return false;">
+					<div class="form-row">
+						<label for="career">Career Goal</label>
+						<input id="career" name="career" type="text" placeholder="e.g. AI Engineer" required>
+					</div>
+
+					<div class="form-row split">
+						<div>
+							<label for="level">Skill Level</label>
+							<select id="level" name="level" required>
+								<option value="">Select level</option>
+								<option>Beginner</option>
+								<option>Intermediate</option>
+								<option>Advanced</option>
+							</select>
+						</div>
+						<div>
+							<label for="hours">Daily Study Hours</label>
+							<input id="hours" name="hours" type="number" min="0" max="24" step="0.5" placeholder="e.g. 2" required>
+						</div>
+					</div>
+
+					<div class="form-actions">
+						<button id="generate" type="button">Generate Roadmap</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="features" aria-labelledby="features-heading">
+			<div class="container">
+				<header class="section-header">
+					<p class="eyebrow">Designed for ambitious learners</p>
+					<h2 id="features-heading">Features that accelerate career growth</h2>
+				</header>
+
+				<div class="feature-grid">
+					<article class="feature-card">
+						<h3>Personalized planning</h3>
+						<p>Generate a roadmap that adapts to your goals and learning pace, based on proven career frameworks and practical milestones.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Experience-based guidance</h3>
+						<p>Choose your skill level and get recommendations that match your current knowledge and strength areas.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Daily study focus</h3>
+						<p>Stay consistent with a plan built around the time you can commit each day, from 1 hour to full-time learning.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Portfolio-ready results</h3>
+						<p>Move from theory to project work with clearly defined milestones and practical outcomes for your resume.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="why-choose" aria-labelledby="why-heading">
+			<div class="container split-grid">
+				<div class="why-copy">
+					<p class="eyebrow">Why choose CareerPilot AI</p>
+					<h2 id="why-heading">A smarter way to plan your tech career</h2>
+					<p>CareerPilot AI combines modern career frameworks, adaptive learning pathways, and practical project planning to help you move faster and stay focused.</p>
+					<ul>
+						<li>Clarity in every step from beginner to advanced</li>
+						<li>Role-specific learning paths for high-demand jobs</li>
+						<li>Professional structure built for resume-ready outcomes</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section id="roadmap" class="roadmap">
+			<div class="container">
+				<p class="empty-message">Your roadmap will appear here once you generate it.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div>
+				<h3>CareerPilot AI</h3>
+				<p>Smart career planning for ambitious learners who want a professional edge.</p>
+			</div>
+			<nav aria-label="Footer navigation">
+				<ul>
+					<li><a href="#features-heading">Features</a></li>
+					<li><a href="#why-heading">Why choose us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
+
